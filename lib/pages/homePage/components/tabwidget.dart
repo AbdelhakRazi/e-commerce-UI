@@ -55,7 +55,7 @@ class TabWidget extends StatelessWidget {
                           (index) => CardWidget(
                             price: 5.256,
                             title: 'Air Jordan 1\nTravis Scott OG',
-                            image: 'assets/airjordan.png',
+                            image: 'assets/1.png',
                             index: index,
                           ),
                         ),

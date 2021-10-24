@@ -45,7 +45,7 @@ class CardWidget extends StatelessWidget {
                 tag: 'image$index',
                 child: Image.asset(
                   image!,
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               )),
           const Spacer(),
@@ -56,7 +56,7 @@ class CardWidget extends StatelessWidget {
                 tag: 'price$index',
                 child: Material(
                   color: Colors.transparent,
-                  child: Text('${price!} Do',
+                  child: Text('${price!} €',
                       style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
