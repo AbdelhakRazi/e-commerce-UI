@@ -48,12 +48,15 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 10),
               Hero(
                 tag: 'title${widget.index}',
-                child: const Text(
-                  "Air Jordan 1\nTravis Scott OG",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold),
+                child: Material(
+                  color: Colors.transparent,
+                  child: const Text(
+                    "Air Jordan 1\nTravis Scott OG",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
               const SizedBox(height: 30),
@@ -78,11 +81,14 @@ class _DetailPageState extends State<DetailPage> {
               const SizedBox(height: 10),
               Hero(
                 tag: 'price${widget.index}',
-                child: const Text('5.256 Do',
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black)),
+                child: const Material(
+                  color: Colors.transparent,
+                  child: Text('5.256 Do',
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black)),
+                ),
               ),
               const SizedBox(height: 20),
               Padding(

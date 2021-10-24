@@ -27,12 +27,15 @@ class CardWidget extends StatelessWidget {
           const SizedBox(height: 10),
           Hero(
             tag: 'title$index',
-            child: Text(
-              title!,
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
+            child: Material(
+              color: Colors.transparent,
+              child: Text(
+                title!,
+                style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           const SizedBox(height: 30),
@@ -45,17 +48,20 @@ class CardWidget extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
               )),
-          const SizedBox(height: 30),
+          const Spacer(),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Hero(
                 tag: 'price$index',
-                child: Text('${price!} Do',
-                    style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black)),
+                child: Material(
+                  color: Colors.transparent,
+                  child: Text('${price!} Do',
+                      style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black)),
+                ),
               ),
               Container(
                 decoration: const BoxDecoration(

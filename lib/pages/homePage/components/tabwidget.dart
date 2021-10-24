@@ -41,7 +41,8 @@ class TabWidget extends StatelessWidget {
             height: 10,
           ),
           Container(
-            height: 263,
+            height: 280,
+            color: Colors.transparent,
             child: CustomScrollView(
                 scrollDirection: Axis.horizontal,
                 physics: const BouncingScrollPhysics(),
